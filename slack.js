@@ -11,7 +11,7 @@ const expressServer = app.listen(port);
 const io = socketio(expressServer);
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + 'public/chat.html'))
+    res.sendFile(path.join(__dirname + '/public/chat.html'))
 })
 
 // io.on = io.of('/').on = io.sockets.on
